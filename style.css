@@ -1,0 +1,113 @@
+:root {
+    --toppx: 50px;
+    --botpx: 500px;
+}
+
+.backside{
+     width: 300px;
+     height: 600px;
+     background-image: url(images/back.png);
+     background-size: 300px 600px;
+     border: 5px solid black;
+     margin: auto;
+}
+#mycar{
+    width: 50px;
+    height: 50px;
+    background-image: url(images/Mycar.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 550px;
+    left: 125px;
+}
+.cars{ 
+    width: 50px;
+    height: 50px;
+    background-image: url(images/EnemyCar.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 50px;
+    left: 125px;
+    animation: CarsMov 2s infinite linear;
+}
+   
+@keyframes CarsMov {
+    0% {
+        top: var(--toppx);
+    }
+    100% {
+        top: var(--botpx);
+    }
+}
+/*
+.CarsMov0{
+    animation: CarsMov0 1ms linear;
+}   
+@keyframes CarsMov0 {
+    100% {
+        top: var(--toppx);
+    }
+}
+.CarsMov1{
+    animation: CarsMov1 1ms linear;
+}   
+@keyframes CarsMov1 {
+    100% {
+        top: var(--toppx);
+    }
+}
+.CarsMov2{
+    animation: CarsMov2 1ms linear;
+}   
+@keyframes CarsMov2 {
+    100% {
+        top: var(--toppx);
+    }
+}
+*/
+
+
+.move01{
+    animation: move01 0.1s linear;
+}
+@keyframes move01 {
+    0%{
+        left :50px;
+    }
+    100% {
+        left: 125px;
+    }
+}
+.move12{
+    animation: move12 0.1s linear;
+}
+@keyframes move12 {
+    0%{
+        left :125px;
+    }
+    100% {
+        left: 200px;
+    }
+}
+.move10{
+    animation: move10 0.1s linear;
+}
+@keyframes move10 {
+    0%{
+        left :125px;
+    }
+    100% {
+        left: 75px;
+    }
+}
+.move21{
+    animation: move21 0.1s linear;
+}
+@keyframes move21 {
+    0%{
+        left :200px;
+    }
+    100% {
+        left: 125px;
+    }
+}
